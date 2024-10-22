@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melior Clinica Integrada</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Link para Font Awesome -->
+    <style>
+        a {
+            width: 10%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            border: 1px solid #a445ab;
+            color: #fefefe;
+            background-color: #a445ab;
+        }
+        /* Estilo para o link */
+        a.instagram-link {
+            display: inline-block;
+            width: 60px;  /* Tamanho fixo para o ícone */
+            height: 60px;
+            border-radius: 50%;  /* Forma redonda */
+            background-color: black;  /* Cor de fundo preta */
+            color: white;  /* Cor do ícone (branca) */
+            text-align: center;  /* Centraliza o ícone */
+            line-height: 60px;  /* Centraliza o ícone verticalmente */
+            font-size: 28px;  /* Tamanho do ícone */
+            border: 2px solid black;  /* Borda preta */
+            transition: background-color 0.3s, border-color 0.3s;  /* Transição suave */
+        }
+
+        /* Estilo para o efeito ao passar o mouse */
+        a.instagram-link:hover {
+            background-color: #a445ab;  /* Cor roxa quando passar o mouse */
+            border-color: #a445ab;  /* Borda roxa também */
+        }
+
+        tt {
+            color: white;
+        }
+        h2 {
+            font-family: monospace;
+            font-size: 2.5em;
+            text-align: center;
+            color: #49035e;
+            margin-bottom: 20px;
+            animation: slideDown 2s ease;
+        }
+
+        p {
+            font-size: 15px;
+            font-family: monospace;
+            color: #000000;
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #350b36;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .overlay {
+            background-color: white;
+            padding: 30px;
+            border-radius: 50px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 1000%;
+        }
+
+        .roda_pé {
+            background-color: rgb(0, 0, 0);
+            padding: 30px;
+            border-radius: 50px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        label {
+            font-family: monospace;
+            display: block;
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #350b36;
+        }
+        input[type="date"],
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #a445ab;
+            background-color: #f0f0f0;
+            color: #000;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+
+        button {
+            display: block;
+            width: 50%;
+            padding: 10px;
+            background-color: #a445ab;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ee2fff;
+        }
+
+        .phone-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #a445ab;
+            background-color: #f0f0f0;
+            color: #000;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+
+        .phone-input select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #a445ab;
+            background-color: #f0f0f0;
+            color: #000;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+
+        .phone-input input {
+            flex: 1;
+            background-color: #f0f0f0;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #a445ab;
+            border-radius: 5px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <tt></tt><img src="imgens/melior.png" alt="Descrição da imagem" width="300" , height="0%"></tt>
+
+    <div class="overlay">
+        <!-- Borboletas com emojis voando -->
+
+
+
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h2>Preencha o formulário para<br> dar início<br> ao seu atendimento. 🦋💜</h2>
+
+
+        <label for="name">Nome:</label>
+        <input type="text" id="name" placeholder="Digite seu nome, de preferência completo" required>
+
+        <label for="namer">Nome do responsável:</label>
+        <input type="text" id="namer" placeholder="Digite o nome do responsável, de preferência completo" required>
+
+        <label for="CPF">CPF::</label>
+        <input type="text" id="CPF" placeholder="Digite o seu CPF (opcional)" required>
+
+        <label for="Naci">Data de nacimento:</label>
+        <input type="date" id="naci" placeholder="Digite o nome do responsável, de preferência completo" required>
+
+        <label for="gender">Identidade de Gênero:</label>
+        <select id="gender" name="gender">
+            <option value="Outro...">Outro...</option>
+            <option value="Anônimo">Anônimo | Prefiro não revelar </option>
+            <option value="Masculino">Masculino</option>
+            <option value="Feminino">Feminino</option>
+            <option value="Agênero">Agênero</option>
+            <option value="Gênero Fluido">Gênero Fluido</option>
+            <option value="Bigênero">Bigênero</option>
+            <option value="Andrógino">Andrógino</option>
+            <option value="Demiboy">Demiboy (Demigaroto)</option>
+            <option value="Demigirl">Demigirl (Demigarota)</option>
+            <option value="Não-Binário">Não-Binário</option>
+            <option value="Genderqueer">Genderqueer</option>
+            <option value="Pangênero">Pangênero</option>
+            <option value="Neutrois">Neutrois</option>
+            <option value="Two-Spirit">Two-Spirit (Duas-Almas)</option>
+            <option value="Intergênero">Intergênero</option>
+            <option value="Maverique">Maverique</option>
+            <option value="Apogênero">Apogênero</option>
+            <option value="Poligênero">Poligênero</option>
+            <option value="Cisgênero">Cisgênero</option>
+            <option value="Transgênero">Transgênero</option>
+            <option value="Terceiro Gênero">Terceiro Gênero</option>
+            <option value="Genderflux">Genderflux</option>
+            <option value="Gênero Neutro">Gênero Neutro</option>
+            <option value="Quoigênero">Quoigênero</option>
+            <option value="Aliagênero">Aliagênero</option>
+            <option value="Genderfae">Genderfae</option>
+            <option value="Gênero Vago">Gênero Vago</option>
+            <option value="Gênero Luminal">Gênero Luminal</option>
+            <option value="Graygender">Graygender</option>
+            <option value="Caelgênero">Caelgênero</option>
+            <option value="Novigênero">Novigênero</option>
+            <option value="Libragênero">Libragênero</option>
+
+        </select>
+        <label for="namer">Telefone:</label>
+        <input type="text" id="phone" placeholder="Digite o seu telefone" required>
+
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Digite seu melhor email" required>
+
+        <label for="escolhas">Procedimentos:</label>
+        <select id="escolhas" name="escolhas">
+            <option value="Estou avaliando...">Estou avaliando...</option>
+            <option value="Quero conhecer vocês antes!">Quero conhecer vocês antes!</option>
+            <option value="Não estou certo(a) sobre qual seria a opção ideal.">Não estou certo(a) sobre qual seria a
+                opção ideal.</option>
+            <option value="Neurologista (todas as idades)">Neurologista (todas as idades)</option>
+            <option value="Psiquiatra (adulto)">Psiquiatra (adulto)</option>
+            <option value="Reumatologista">Reumatologista</option>
+            <option value="Fonoaudiologia">Fonoaudiologia</option>
+            <option value="Psicologia / Neuropsicologia">Psicologia / Neuropsicologia</option>
+            <option value="Psicopedagogia">Psicopedagogia</option>
+            <option value="Nutricionista">Nutricionista</option>
+            <option value="ThetaHealing">ThetaHealing</option>
+            <option value="Eletroencefalograma">Eletroencefalograma </option>
+            <option value="Laserterapia">Laserterapia</option>
+            <option value="Atendimento jurídico">Atendimento jurídico</option>
+            <option value="Advogada Dra Amanda Teixeira">Advogada Dra Amanda Teixeira</option>
+
+        </select>
+
+        <label for="escolhasc">Convênios:</label>
+        <select id="escolhasc" name="escolhasc">
+            <option value="IPSM">IPSM</option>
+            <option value="Cemig Saúde">Cemig Saúde</option>
+            <option value="Nenhum">Nenhum</option>
+        </select>
+
+        <label for="description">Descrição:</label>
+        <input type="text" id="description" placeholder="Digite a descrição"  required>
+
+        <button onclick="sendWhatsApp()">Enviar por WhatsApp <br>  +55 (31) 9339-5165</button>
+
+        <br>
+        <div id="roda_pé">
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Link para Font Awesome -->
+            <style>
+                /* Estilo base para os links */
+                a.icon-link {
+                    display: inline-block;
+                    width: 60px;  /* Tamanho fixo para o ícone */
+                    height: 60px;
+                    border-radius: 50%;  /* Forma redonda */
+                    background-color: black;  /* Cor de fundo preta */
+                    color: white;  /* Cor do ícone (branca) */
+                    text-align: center;  /* Centraliza o ícone */
+                    line-height: 60px;  /* Centraliza o ícone verticalmente */
+                    font-size: 28px;  /* Tamanho do ícone */
+                    border: 2px solid black;  /* Borda preta */
+                    margin: 10px;  /* Espaçamento entre os ícones */
+                    transition: background-color 0.3s, border-color 0.3s;  /* Transição suave */
+                }
+        
+                /* Estilo para o efeito ao passar o mouse */
+                a.icon-link:hover {
+                    background-color: #9b59b6;  /* Cor roxa quando passar o mouse */
+                    border-color: #9b59b6;  /* Borda roxa também */
+                }
+            </style>
+                <br><br><br>
+                <a href="https://www.instagram.com/melior_clinica/profilecard/?igsh=emN0d3lodmZoZmlx" class="instagram-link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://api.whatsapp.com/send/?phone=553193395165&" class="icon-link" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            
+                <!-- Ícone de uma casa (Localização) -->
+                <a href="https://www.google.com/maps/uv?pb=!1s0xa6c3eb6c86afc3%3A0x80a982200bd30a61!3m1!7e115!4s%2Fmaps%2Fplace%2FMelior%2F%40-19.9703607%2C-44.1976088%2C3a%2C75y%2C247.87h%2C90t%2Fdata%3D*213m4*211e1*213m2*211sVcl9P5ElZcD5QZavxDm-kQ*212e0*214m2*213m1*211s0xa6c3eb6c86afc3%3A0x80a982200bd30a61%3Fsa%3DX%26ved%3D2ahUKEwiJx6yNjJuJAxXELrkGHWVtDMwQpx96BAgvEAA!5sMelior%20-%20Google%20Search!15sCgIgAQ&imagekey=!1e2!2sVcl9P5ElZcD5QZavxDm-kQ&cr=le_a7&hl=en&ved=1t%3A206134&ictx=111" class="icon-link" target="_blank">
+                    <i class="fas fa-home"></i>
+                </a>
+            
+                <!-- Ícone de E-mail -->
+                <a href="mailto:meliorclinicaintegrada@gmail.com" class="icon-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <p>__Instagram___Whatsapp___Localização___Email__</p>
+            
+        </div>
+    </div>
+
+
+
+    <script>
+        function sendWhatsApp() {
+            const name = document.getElementById('name').value;
+            const namer = document.getElementById('namer').value;
+            const sexo = document.getElementById('gender').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const description = document.getElementById('description').value;
+            const escolha = document.getElementById('escolhas').value;
+            const escolhac = document.getElementById('escolhasc').value;
+            const cpf = document.getElementById('CPF').value;
+            const data = document.getElementById('naci').value;
+
+
+            const message = `*Novo Pedido*\n\nNome: ${name}\n\CPF: ${cpf} \nData de Nascimento: ${data}\nNome do Responsável: ${namer}\nGênero: ${sexo}\nTelefone:  ${phone}\nEmail: ${email}\nProcedimento: ${escolha}\nConvênios: ${escolhac}\n\nDescrição: ${description}\n`;
+            const whatsappUrl = `https://wa.me/553193395165?text=${encodeURIComponent(message)}`;
+
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+
+
+</body>
+
+</html>
